@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/svg" href="img/FIRMA _AZ_ LOGO.svg">
+
+    <title>Adam Zydorczak Architekt</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav class="navigation">
+                <div class="navigation__box">
+                    <div class="navigation__logo">
+
+                        <img src="img/wolines.png" alt="Logo firmy">
+
+                    </div>
+                    <ul class="navigation__container">
+                        <li class="navigation__item"><a href="#" class="navigation__a" data-class="about">O firmie</a>
+                        </li>
+                        <li class="navigation__item"><a href="#" class="navigation__a" data-class="project">Projekty</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__a" data-class="realization">Realizacja</a>
+                        </li>
+                        <li class="navigation__item"><a href="#" class="navigation__a" data-class="contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about" data-id="about"> O firmie
+        </section>
+        <section class="project" data-id="project">
+            Czym sie zajmuje
+        </section>
+        <section class="realization" data-id="realization">Realizacja</section>
+
+        <section class="contact" data-id="contact">Formularz</section>
+
+        <footer class="footer">
+            <div class="footer__container">Stopka</div>
+
+        </footer>
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $('.navigation__a').on('click', function () {
+
+            const goToSection = "[data-id=" + $(this).attr('data-class') + "]";
+            $('body, html').animate({
+                scrollTop: $(goToSection).offset().top - 79
+            }, 500)
+
+        })
+    </script>
+</body>
+
+</html>
