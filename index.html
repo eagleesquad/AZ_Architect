@@ -46,7 +46,33 @@
         </section>
         <section class="realization" data-id="realization">Realizacja</section>
 
-        <section class="contact" data-id="contact">Formularz</section>
+        <section class="contact" data-id="contact">
+            <div class="contact__form">
+                <form action="#" class="form">
+                    <h4 class="heading__quaternary-2">
+                        Wyślij wiadomość
+                    </h4>
+                    <div class="form__group">
+                        <input class="form__input" id="name" placeholder="Imię i nazwisko" required type="text">
+                        <label class="form__label" for="name">Imię i nazwisko</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" id="email" placeholder="E-mail" required type="email">
+                        <label class="form__label" for="email">E-mail</label>
+                    </div>
+                    <div class="form__group form__message">
+
+                        <label class="form__label__message" for="wiadomosc">Wiadomość </label>
+                        <textarea style="width: 100%" class="form__message" id="wiadomosc" name="wiadomosc"
+                                  wrap="soft"> </textarea>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="footer__container">Stopka</div>
