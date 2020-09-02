@@ -35,3 +35,8 @@ $(document).on('scroll', function () {
     }
 
 })
+
+//popup w sekcji ralizacje
+$('.realization__img').on('click', function () {
+    alert('zostało wybrane zdjęcie')
+})
